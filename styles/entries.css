@@ -1,0 +1,98 @@
+body {
+  font-family: Arial;
+  padding: 16px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  font-size: 16px;
+  text-align: left;
+  background: white;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#container {
+    height: 700px;
+    width: 600px;
+    border-right: 3px black solid;
+    border-left: 3px black solid;
+    border-bottom: 3px black solid;
+    float: left;
+    margin: 10px auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.row {
+    margin: 0;  
+}
+.current .item{
+    background-color: rgba(112,112,112,0.7);
+}
+.entry {
+    background-color: rgba(216, 209, 209, 0.7);
+    border-top: 3px solid black;
+}
+.item {
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 18px;
+}
+.description {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.item .date {
+    margin-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.item .title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}

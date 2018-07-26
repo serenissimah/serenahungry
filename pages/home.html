@@ -1,20 +1,41 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='journal.css'/>
+    <title>Serena Hungry</title>
 </head>
-
 <body>
-    <header>
-        <div>Serena</div>
-    </header>
+    <div id='container'>
+        <div class='entry current'>
+            <div class='item row'>
+                <div class="col-xs-3">
+                    <p class='date'>Day 1: July 25, 2018</p>
+                </div>
+            </div>
+            <div class='description row'>
+                <div class="col-xs-3">&nbsp;</div>
+                <div class="col-xs-6">
+                    <p>A</p>
+                </div>
+                <div class='col-xs-3'>&nbsp;</div>
+            </div>
+        </div>
+        <div class='entry'>
+            <div class='item row'>
+                <div class='col-xs-3'>
+                    <p class='date'>Day 2: July 26, 2018</p>
+                </div>
+            </div>
+            <div class='description row'>
+                <div class='col-xs-3'>&nbsp;</div>
+                <div class='col-xs-6'>
+                    <p>B</p>
+                </div>
+                <div class='col-xs-3'>&nbsp;</div>
+            </div>
+        </div>
 
-    <nav>
-        <a href="/entries">ENTRIES</a>
-        <a href="/about">ABOUT ME</a>
-    </nav>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="journal.js"></script>
 </body>
 </html>
